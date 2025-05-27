@@ -17,9 +17,6 @@ export class CountryService {
 	private queryCacheCapital = new Map<string, Country[]>()
 	private queryCacheCountry = new Map<string, Country[]>()
 	private queryCacheRegion = new Map<Region, Country[]>()
-	private queryCacheCode = new Map<string, Country | undefined>()
-
-
 
 	searchByCapital(query: string){
 		query = query.toLowerCase()

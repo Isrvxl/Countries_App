@@ -38,7 +38,7 @@
                 </tr>
             }
 
-            @if (countries().length === 0 && !isLoading()) {
+            @if (countries().length === 0 && !isLoading() && !errorMessage()) {
                 <tr>
                     <td colspan="8" class="text-center">
                         No se encontraron resultados.
